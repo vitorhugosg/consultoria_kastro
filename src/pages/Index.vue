@@ -3,14 +3,27 @@
     <div class="position-absulute-buttons full-width">
       <div class="row">
         <div class="col-12 p-3">
-          <q-btn  unelevated rounded color="primary" label="Login" class="full-width q-m-md" to="/login" />
+          <q-btn
+            unelevated
+            rounded
+            color="primary"
+            label="Login"
+            class="full-width q-m-md"
+            to="/login"
+          />
         </div>
         <div class="col-12 p-3">
-             <q-btn unelevated rounded color="primary" label="Register"  class="full-width q-m-md" to="/register"></q-btn>
+          <q-btn
+            unelevated
+            rounded
+            color="primary"
+            label="Register"
+            class="full-width q-m-md"
+            to="/register"
+          ></q-btn>
         </div>
       </div>
     </div>
-
     <q-carousel
       v-model="slide"
       transition-prev="jump-up"
@@ -49,19 +62,19 @@ export default {
   name: "PageIndex",
   data() {
     return {
-      slide: 'style',
-      lorem: 'Teste levantelab'
+      slide: "style",
+      lorem: "Teste levantelab"
     };
   }
 };
 </script>
 
 <style>
-#indexPage .q-carousel__navigation-inner{
+#indexPage .q-carousel__navigation-inner {
   margin-bottom: 80px;
 }
 
-#indexPage .position-absulute-buttons{
+#indexPage .position-absulute-buttons {
   position: absolute;
   top: 20px;
   z-index: 20;
