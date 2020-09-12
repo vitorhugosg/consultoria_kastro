@@ -3,15 +3,14 @@
     <div class="position-absulute-buttons full-width">
       <div class="row">
         <div class="col-12 p-3">
-          <q-btn  unelevated rounded color="orange" label="Login" class="full-width q-m-md" to="/login" />
+          <q-btn  unelevated rounded color="primary" label="Login" class="full-width q-m-md" to="/login" />
         </div>
         <div class="col-12 p-3">
-             <q-btn unelevated rounded color="orange" label="Register"  class="full-width q-m-md" to="/register"></q-btn>
+             <q-btn unelevated rounded color="primary" label="Register"  class="full-width q-m-md" to="/register"></q-btn>
         </div>
       </div>
-      
-   
     </div>
+
     <q-carousel
       v-model="slide"
       transition-prev="jump-up"
@@ -23,7 +22,7 @@
       padding
       arrows
       height="760px"
-      class="bg-primary text-white shadow-1 rounded-borders"
+      class="bg-secondary text-white shadow-1 rounded-borders"
     >
       <q-carousel-slide name="style" class="column no-wrap flex-center">
         <h5 class="q-py-none">ShareVid</h5>
