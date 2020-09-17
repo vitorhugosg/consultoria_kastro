@@ -1,12 +1,7 @@
 <template>
   <q-form @submit="login()">
-    <q-input
-      type="email"
-      :rules="[validate]"
-      color="primary"
-      v-model="form.email"
-      label="Email"
-    />
+    <q-input type="email" :rules="[validate]" color="primary" v-model="form.email" label="Email" label-color="white" />
+
     <q-input
       type="password"
       :rules="[
@@ -16,6 +11,7 @@
       color="primary"
       v-model="form.password"
       label="Senha"
+      label-color="white"
     />
 
     <q-btn
@@ -36,9 +32,9 @@ export default {
     return {
       form: {
         email: "",
-        password: ""
+        password: "",
       },
-      loader: false
+      loader: false,
     };
   },
 
@@ -48,19 +44,19 @@ export default {
       this.$q.loading.show();
       this.$axios
         .post("api/login")
-        .then(res => {
+        .then((res) => {
           this.$q.notify({
             message: "Foi logado com sucesso",
             position: "top",
-            color: "green"
+            color: "green",
           });
         })
-        .catch(err => {
-          this.$router.push('/profile')
+        .catch((err) => {
+          this.$router.push("/profile");
           this.$q.notify({
             message: "Houve uma falha ao logar usuário",
             position: "top",
-            color: "red"
+            color: "red",
           });
         })
         .finally(() => {
@@ -74,9 +70,10 @@ export default {
       } else {
         return "Você deve ter mais de 6 caracteres";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style></style>
+<style>
+</style>

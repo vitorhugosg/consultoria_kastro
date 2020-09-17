@@ -10,11 +10,15 @@ const routes = [
     ]
   },
   {
-    
+
     path: '/profile',
     component: () => import('layouts/Profile.vue'),
     children: [
       { path: '', component: () => import('pages/profile/index.vue') },
+      { path: 'dashboard', component: () => import('pages/profile/dashboard.vue') },
+      { path: 'detail', component: () => import('pages/profile/detail.vue') },
+      { path: 'following', component: () => import('pages/profile/following.vue') },
+      { path: 'gallery', component: () => import('pages/profile/gallery.vue') },
     ]
   },
 

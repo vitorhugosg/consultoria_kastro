@@ -37,21 +37,33 @@
       height="760px"
       class="bg-secondary text-white shadow-1 rounded-borders"
     >
-      <q-carousel-slide name="style" class="column no-wrap flex-center">
+      <q-carousel-slide name="style" class="column no-wrap flex-center slider">
         <h5 class="q-py-none">ShareVid</h5>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>
+          Best Video Sharing Platform
+          around the globe
+        </p>
       </q-carousel-slide>
-      <q-carousel-slide name="tv" class="column no-wrap flex-center">
+      <q-carousel-slide name="tv" class="column no-wrap flex-center slider">
         <h5 class="q-py-none">ShareVid</h5>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>
+          Best Video Sharing Platform
+          around the globe
+        </p>
       </q-carousel-slide>
-      <q-carousel-slide name="layers" class="column no-wrap flex-center">
+      <q-carousel-slide name="layers" class="column no-wrap flex-center slider">
         <h5 class="q-py-none">ShareVid</h5>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>
+          Best Video Sharing Platform
+          around the globe
+        </p>
       </q-carousel-slide>
-      <q-carousel-slide name="map" class="column no-wrap flex-center">
+      <q-carousel-slide name="map" class="column no-wrap flex-center slider">
         <h5 class="q-py-none">ShareVid</h5>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>
+          Best Video Sharing Platform
+          around the globe
+        </p>
       </q-carousel-slide>
     </q-carousel>
   </q-page>
@@ -63,20 +75,29 @@ export default {
   data() {
     return {
       slide: "style",
-      lorem: "Teste levantelab"
+      lorem: "Teste levantelab",
     };
-  }
+  },
 };
 </script>
 
 <style>
 #indexPage .q-carousel__navigation-inner {
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 
 #indexPage .position-absulute-buttons {
   position: absolute;
   top: 20px;
   z-index: 20;
+}
+
+.slider {
+  background:
+    linear-gradient(
+      rgba(0,0,0,.4),rgba(0,0,0,.4)
+    ),
+    url('../assets/images/bg_home.png') no-repeat;
+  background-size: cover;
 }
 </style>
